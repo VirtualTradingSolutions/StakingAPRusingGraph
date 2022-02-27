@@ -1,5 +1,5 @@
-html {
-  background-color: #09394e;
+.Container{
+  background-color: #09394e !important;
   color: aliceblue;
   /* background-image: url(./back.png); */
   background-position: center;
@@ -10,67 +10,83 @@ html {
   scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar{
   display: none;
 }
 
-.bottom {
+
+.bottom{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 40px 10%;
 }
 
-.App {
+.App{
   padding: 5px 20px;
   text-align: center;
   position: relative;
 }
-.header {
+.header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.mid {
+.mid{
   text-align: center;
-  padding: auto 20px;
+  padding: auto 20px; 
 }
 
-.back {
+.back{
   width: 100%;
-  height: 100%;
+  height: 100%;  
 }
 
-.new_middle {
+.new_middle{
   display: flex;
   flex-direction: column;
   width: 40%;
   border-radius: 15px;
   font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.new_button {
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  font-weight: 800;
-  margin: auto;
-  color: white;
-  font-size: 14px;
-  padding: 8px 16px;
+.new_button{
+  border: 3px solid rgba(255, 255, 255, 0.1) !important;
+  font-weight: 800 !important;
+  margin: auto !important;
+  color: white !important;
+  background: transparent !important;
+  font-size: 14px !important;
+  border-radius: 15px !important;
+  background-color: #1f6e85 !important;
+  padding: 0px !important;
+  width: 40%;
+}
+.new_button2{
+  border: 3px solid rgba(255, 255, 255, 0.1) !important;
+  font-weight: 800 !important;
+  margin: auto !important;
+  color: white !important;
+  background: transparent !important;
+  font-size: 14px !important;
+  border-radius: 15px !important;
+  background-color: #1f6e85 !important;
+  width: 100%;
 }
 
-.new_middle span {
+.new_middle span{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: auto 7%;
 }
 
-.new_middle p {
+.new_middle p{
   margin: 4px;
 }
 
-.mid p {
+.mid p{
   font-size: 1.8em;
   letter-spacing: 3px;
   font-weight: 500;
@@ -80,14 +96,14 @@ body::-webkit-scrollbar {
   margin-top: 40px;
 }
 
-.outline {
-  font-size: 2.4em !important;
-  font-weight: 700 !important;
-  margin-top: 15px !important;
+.outline{
+  font-size: 2.4em!important;
+  font-weight: 700!important;
+  margin-top: 15px!important;
   background-color: black;
 }
 
-.middle {
+.middle{
   display: flex;
   flex-wrap: wrap;
   /* flex-direction: column; */
@@ -103,30 +119,30 @@ body::-webkit-scrollbar {
   }
 } */
 
-.leftb {
+.leftb{
   margin-left: 60px;
   margin-top: 69px;
 }
 
-.left {
+.left{
   display: flex;
   flex-direction: column;
   width: 45%;
 }
 
-.footer {
+.footer{
   float: right;
 }
 
-.mid {
+.mid{
   text-align: center;
   flex-direction: row;
 }
 
-.max {
+.max{
   padding: 20px 10px;
   border-radius: 7px;
-  margin: 25px 0 20px 0 !important;
+  margin: 25px 0 20px 0!important;
   border: none;
   border-left: none;
   border-top-left-radius: 0;
@@ -136,15 +152,15 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.mid div {
+.mid div{
   width: 100%;
 }
 
-.mid span {
+.mid span{
   cursor: pointer;
 }
 
-.new_middle input {
+.new_middle input{
   padding: 20px 15px;
   outline: none;
   width: 90%;
@@ -152,20 +168,20 @@ body::-webkit-scrollbar {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin: 25px 0 20px 0;
-  border-right: none !important;
+  border-right: none!important;
   border: none;
   color: black;
   background-color: white;
 }
 
-.new_middle input::placeholder {
+.new_middle input::placeholder{
   opacity: 0.8;
   color: black;
 }
 
-button {
+
+/* button{
   border-radius: 15px;
-  /* width: 60%; */
   border: 3px solid rgba(255, 255, 255, 0.1);
   font-weight: 800;
   margin: auto;
@@ -174,31 +190,39 @@ button {
   padding: 12px;
   background-color: #1f6e85;
   cursor: pointer;
-  /* box-shadow: 6px 6px #EDD1A6; */
-}
+} */
 
-.bottom p {
+.bottom p{
   font-size: larger;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-button:active {
-  transform: scale(0.9, 0.9);
-}
+/* button:active{
+  transform: scale(0.9,0.9);
+} */
 
-.wallet1 {
+
+
+.wallet1{
   margin-top: 20px;
   margin-right: 10px;
 }
-.wallet {
+.wallet{
   margin-top: 18px;
   width: 100%;
   padding: 16px;
   font-size: 14px;
+  background-color: #1f6e85;
+  border-radius: 15px;
+  border: 3px solid hsla(0,0%,100%,.1);
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+
   /*  */
 }
-.right {
+.right{
   background-color: transparent;
   margin-top: 30px;
   text-align: center;
@@ -209,135 +233,140 @@ button:active {
   /* box-shadow: 8px 8px #ea075a; */
 }
 
-.right p {
+.right p{
   font-size: 18px;
   font-weight: 800;
 }
 
-.add {
+.add{
   font-size: 20px;
   margin-top: 25px;
   font-weight: bold;
   color: #e81434;
 }
 
-.footer {
+.footer{
   margin-top: 2%;
   display: flex;
   margin-right: 15%;
   justify-items: center;
+
 }
 
 @media screen and (max-width: 1060px) {
-  .right {
+  .right{
     width: 60%;
   }
-  .pools button {
+  .pools button{
     width: 30%;
   }
-  .new_middle {
+  .new_middle{
     width: 60%;
   }
 }
 
-.i1 {
+
+.i1{
   width: 3vw;
 }
-.i2 {
+.i2{
   width: 2vw;
 }
 
 @media screen and (max-width: 680px) {
-  .change button {
+  
+  .change button{
     font-size: 10px;
     padding: 6px 13px;
   }
-  .i1 {
+  .i1{
     width: 6vw;
   }
-  .i2 {
+  .i2{
     width: 4vw;
   }
-
-  .back1 {
-    width: 15% !important;
-    height: 15% !important;
+  
+  .back1{
+    width: 15%!important;
+    height: 15%!important;
   }
-  .pools {
+  .pools{
     margin: 40px;
   }
-  .max {
-    padding: 20px 4px !important;
+  .max{
+    padding: 20px 4px!important;
   }
 
-  .new_middle {
+  .new_middle{
     width: 80%;
     font-size: small;
   }
 
-  .bottom {
+  .bottom{
     justify-content: center;
   }
 
-  .mid {
-    flex-direction: column !important;
+  .mid{
+
+    flex-direction: column!important;
   }
 
-  .mid p {
-    font-size: 0.7em !important;
+  .mid p{
+    font-size: 0.7em!important;
   }
 
-  .outline {
-    font-size: 1em !important;
-    margin-top: 15px !important;
+  .outline{
+    font-size: 1em!important;
+    margin-top: 15px!important;
   }
-  .wallet {
+  .wallet{
     padding: 12px;
-    font-size: 8px !important;
+    font-size: 8px!important;
   }
-  .wallet1 {
+  .wallet1{
     margin-top: 6px;
     margin-right: 0;
   }
-  .leftb {
-    margin: auto !important;
+  .leftb{
+    margin: auto!important;
   }
+  
 }
 @media screen and (max-width: 444px) {
-  .back {
+  .back{
     left: 25%;
   }
-  .wallet1 {
-    margin-right: 0 !important;
+  .wallet1{
+    margin-right: 0!important;
   }
-  .wallet {
-    font-size: 8px !important;
+  .wallet{
+    font-size: 8px!important;
   }
-  .pools button {
+  .pools button{
     width: 40%;
   }
 }
 
 @media screen and (max-width: 997px) {
-  .mid p {
+  .mid p{
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 0;
   }
-  .footer {
+  .footer{
     margin-right: 10px;
   }
-  .leftb {
+  .leftb{
     margin-left: 40px;
   }
-  .wallet1 {
+  .wallet1{
     margin-top: 8px;
     margin-right: 0;
   }
-  .left {
+  .left{
     width: 90%;
   }
-  .back {
+  .back{
     width: 35vh;
     height: 35vh;
   }
@@ -345,22 +374,22 @@ button:active {
     font-size: 40px!important;
   } */
 
-  .outline {
-    font-size: 1.4em !important;
-    margin-top: 15px !important;
+  .outline{
+    font-size: 1.4em!important;
+    margin-top: 15px!important;
   }
 
-  .wallet {
+  .wallet{
     font-size: 12px;
   }
-  .p {
+  .p{
     font-size: 10px;
   }
 
-  .left button {
-    font-size: 12px !important;
+  .left button{
+    font-size: 12px!important;
   }
-  .add {
+  .add{
     font-size: 15px;
     margin-top: 25px;
   }
